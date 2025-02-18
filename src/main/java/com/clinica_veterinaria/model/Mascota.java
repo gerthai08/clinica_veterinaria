@@ -20,13 +20,12 @@ public class Mascota {
     @JoinColumn(name = "id_duenio", referencedColumnName = "id_duenio")
     private Duenio unDuenio;
 
-    public Mascota(Long id_masco, String nombre, String especie, String raza, String color, Duenio unDuenio) {
+    public Mascota(Long id_masco, String nombre, String especie, String raza, String color) {
         this.id_masco = id_masco;
         this.nombre = nombre;
         this.especie = especie;
         this.raza = raza;
         this.color = color;
-        this.unDuenio = unDuenio;
     }
 
     public Mascota() {

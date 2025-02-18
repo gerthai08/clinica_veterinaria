@@ -20,5 +20,5 @@ public interface IDuenioService {
     public Duenio findDuenio(Long id);
 
     //edicion/modificacion
-    public void editDuenio(Duenio duenio);
+    public void editDuenio(Long id,Duenio duenio);
 }

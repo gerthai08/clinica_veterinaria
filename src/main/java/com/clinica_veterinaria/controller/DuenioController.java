@@ -33,9 +33,9 @@ public class DuenioController {
         return "La persona fue eliminada correctamente";
     }
 
-    @PutMapping ("/duenio/editar")
-    public Duenio editPersona(@RequestBody Duenio duenio){
-        duenioServ.editDuenio(duenio);
+    @PutMapping ("/duenio/editar/{id}")
+    public Duenio editPersona(@PathVariable Long id ,@RequestBody Duenio duenio){
+        duenioServ.editDuenio(id,duenio);
 
         return duenioServ.findDuenio(duenio.getId_duenio());
     }

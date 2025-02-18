@@ -38,8 +38,12 @@ public class DuenioService implements IDuenioService {
     }
 
     @Override
-    public void editDuenio(Duenio duenio) {
+    public void editDuenio(Long id, Duenio duenio) {
 
-        this.saveDuenio(duenio);
+        repoDuenio.findById(id).orElse(null);
+
+        duenio.setId_duenio(id);
+
+        repoDuenio.save(duenio);
     }
 }

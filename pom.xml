@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.clinica_veterinaria</groupId>
 	<artifactId>clinica_veterinaria</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>clinica_veterinaria</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
@@ -91,7 +91,6 @@
 						<exclude>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
-							<version>1.18.36</version>
 						</exclude>
 					</excludes>
 				</configuration>

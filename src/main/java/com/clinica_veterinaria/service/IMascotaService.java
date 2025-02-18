@@ -21,7 +21,7 @@ public interface IMascotaService {
     public Mascota findMascota(Long id_mascota);
 
     //edición y modificación
-    public void editMascota(Mascota masco);
+    public void editMascota(Mascota masco,Long id_masco);
 
     //traer lista perro caniche
     public List<Mascota> getCaniches();

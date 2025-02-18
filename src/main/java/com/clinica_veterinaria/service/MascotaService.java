@@ -41,9 +41,13 @@ public class MascotaService implements IMascotaService {
     }
 
     @Override
-    public void editMascota(Mascota masco) {
+    public void editMascota(Mascota masco,Long id_masco) {
 
-        this.saveMascota(masco);
+        repoMasco.findById(id_masco).orElse(null);
+
+        masco.setId_masco(id_masco);
+
+        repoMasco.save(masco);
     }
 
     @Override

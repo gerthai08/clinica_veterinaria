@@ -34,10 +34,10 @@ public class MascotaController {
         return "La persona fue eliminada correctamente";
     }
 
-    @PutMapping ("/mascotas/editar")
-    public String editMascota(@RequestBody Mascota masco) {
-        mascoServ.editMascota(masco);
-        return "Mascota editado correctamente";
+    @PutMapping("/mascotas/editar/{id}")
+    public String editMascota(@RequestBody Mascota masco, @PathVariable Long id) {
+        mascoServ.editMascota(masco,id);
+        return "Mascota editada correctamente";
     }
 
     @GetMapping("/mascotas/traer-caniches")
